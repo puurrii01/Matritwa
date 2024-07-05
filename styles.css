@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -10,8 +10,6 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 header {
@@ -81,12 +79,12 @@ a {
 .sec1 .left p {
     color: #515050;
     white-space: pre-line;
-    font-size: 16px; /* Adjusted for better readability */
+    font-size: 16px;
 }
 
 .sec1 .left ul {
     list-style: none;
-    font-size: 16px; /* Adjusted for better readability */
+    font-size: 16px;
     margin-top: 30px;
 }
 
@@ -98,88 +96,68 @@ a {
 }
 
 .sec1 .left ul li::before {
-    content: url(./Images/teenyicons_tick-circle-solid.png);
-    margin-right: 8px; /* Space between icon and text */
+    content: url(./Images/tick.png);
+    margin-right: 8px;
 }
 
 .sec1 .right img {
     max-height: 100%;
     max-width: 100%;
-    object-fit: contain; /* Ensures the image scales correctly */
+    object-fit: contain;
 }
 
 .sec1 .left button {
     margin: 10px 0;
     height: 60px;
-    min-height: 60px; /* Ensure minimum height */
+    min-height: 60px;
     width: 260px;
-    min-width: 260px; /* Ensure minimum width */
+    min-width: 260px;
     border-radius: 10px;
     outline: none;
     color: #FFFFFF;
     background-color: #42B2A2;
     border: none;
-    display: inline-flex; /* Ensure content is inline-flex */
-    align-items: center; /* Align items in the center vertically */
-    justify-content: center; /* Center items horizontally */
-    font-size: 16px; /* Adjust text size if needed */
-    padding: 0 15px; /* Add padding if needed */
-    flex-shrink: 0; /* Prevent the button from shrinking */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0 15px;
+    flex-shrink: 0;
 }
 
 .sec1 .left button::after {
     content: url(./Images/ant-design_arrow-right-outlined.png);
     margin-left: 10px;
-    display: inline-block; /* Ensure the icon is an inline-block */
-    position: relative; /* Position the arrow relative to its normal position */
-    top: 3px; /* Move the arrow down */
+    display: inline-block;
+    position: relative;
+    top: 3px;
 }
-.sec1 .left button:hover {
-    background-color: #36a397; /* Slightly darker shade for hover effect */
-    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transform: translateX(3px); /* Lift the button slightly */
-    transition: all 0.3s ease; /* Smooth transition */
+
+.sec1 .left button {
+    background-color: #36a397;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
+    transform: translateX(3px);
+    transition: all 0.3s ease;
 }
 .sec2{
-    padding: 0 40px;
     height: 100vh;
-}
-.sec2 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.sec2 .container {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    padding: 20px 40px;
 }
-
-.sec2 .left, 
-.sec2 .right {
-    width: 45%;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.sec2 .left {
-    background-color: #e0f7fa;
-}
-
-.sec2 .right {
-    background-color: #ffebee;
-}
-
-.sec2 h2 {
-    margin-bottom: 15px;
-}
-.sec2 .container{
+.sec2 .info, .sec2 .vid{
     padding: 0 40px;
 }
-.sec2 ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.sec2 .info h1{
+    font-size: 37px;
+    margin: 10px;
+}
+span{
+    color: #42B2A2;
+}
+.vid{
+    height: 100%;
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
 }
