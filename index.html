@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matritwa</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 </head>
 <body>
     <header>
@@ -43,15 +48,52 @@
             </div>
         </section>
         <section class="sec2">
+            <div class="timeline">
+                <h1>Track Your <span>Pregnancy Journey</span></h1>
+                <div class="content">
+                    <img src="./Images/timeline.png" alt="Timeline">
+                </div>
+                <button class="tracking">Start Tracking</button>
+            </div>
+        </section>
+        <section class="sec3">
+            <div class="contained">
+                <h1>Nearest <span>Hospital & Clinics</span> To <span>You</span></h1>
+                <div class="mappy">
+                    <div class="maps" id="maps">
+                        <div class="map" id="map"></div>
+                        <div class="search">
+                            <input type="text" id="search-input" placeholder="Search location" style="width: 100%; height: 100%;"/>
+                            <img src="./Images/Search.png" style="height: 25px;" id="searchbutton" alt="search icon">
+                        </div>
+                        <div class="ctrl">
+                            <img src="./Images/plus.png" id="zoomin" style="height: 20px;" alt="">
+                            <img src="./Images/Minus.png" id="zoomout" style="height: 26px;" alt="">
+                            <img src="./Images/track.png" id="locateme" style="height: 30px;" alt="">
+                        </div>
+                    </div>
+                    <div id="hospital-info hospital-list" class="info">
+                        <!-- Hospital information will be dynamically replaced here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec4">
             <div class="info">
                 <h1><span>Do's & Dont's</span> During Pregnancy</h1>
             </div>
             <div class="vid">
                 <iframe width="853" height="500" src="https://www.youtube.com/embed/phiokLngFfM" title="Do&#39;s and Don&#39;ts During Pregnancy, Explained By A Gynaecologist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p style="text-align: center;">Here's a quick video on what to do and what not to do during pregnancy.</p>
-        </div>
+            </div>
         </section>
     </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1rzqUcCR6u0c6al26_tYzVJJA5xMeZo8&libraries=places"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
