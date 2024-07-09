@@ -11,7 +11,9 @@ html, body {
     width: 100%;
     font-family: "Roboto", sans-serif;
 }
-
+main{
+    overflow: hidden;
+}
 header {
     height: 13vh;
     width: 100%;
@@ -423,7 +425,7 @@ span{
     font-size: 13px;
 }
 .sec5{
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 .sec5, .sec5 h1, .sec5 .containered{
@@ -436,9 +438,8 @@ span{
 .containered {
     position: relative;
     padding: 40px;
-    /* Optional: Set width and height if needed */
     width: 100%;
-    height: 100%;
+    height:700px;
     overflow: hidden;
 }
 
@@ -448,6 +449,33 @@ span{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
+    height: 700px;
     cursor: pointer;
+}
+footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 80px;
+    align-items: flex-start;
+}
+.title{
+    align-self: flex-start;
+}
+.title h1{
+    font-size: 26px
+}
+ .container h5{
+    font-size: 20px;
+}
+.first, .second, .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
