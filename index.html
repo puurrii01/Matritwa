@@ -6,6 +6,9 @@
     <title>Matritwa</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 </head>
 <body>
@@ -70,24 +73,94 @@
                             <img src="./Images/track.png" id="locateme" style="height: 30px;" alt="">
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="hp"></div>
-                        <div class="hp"></div>
-                        <div class="hp"></div>
+                    <div id="hospital-info" class="info">
+                        <div class="hp">
+                            <div class="flex">
+                              <div class="infor">
+                                 <h1>Simariya Health post</h1>
+                                 <img src="./Images/star.png" alt="rating">
+                                 <div class="time">
+                                     <p style="color: #2EB000;">Open</p>
+                                     <p>Closes:</p>
+                                     <p>11:59</p>
+                                 </div>
+                             </div>
+                             <div class="direc">
+                                 <img src="./Images/directon.png" id="directions-button" alt="Get Directions">
+                             </div>
+                            </div>
+                            <div class="rating">
+                             <img src="./Images/Avatar.png" alt="">
+                             <p>One of the best maternal hospital in the area.
+                             </p>
+                            </div>
+                         </div>
+                         <div class="hp">
+                            <div class="flex">
+                              <div class="infor">
+                                 <h1>Simariya Health post</h1>
+                                 <img src="./Images/star.png" alt="rating">
+                                 <div class="time">
+                                     <p style="color: #2EB000;">Open</p>
+                                     <p>Closes:</p>
+                                     <p>11:59</p>
+                                 </div>
+                             </div>
+                             <div class="direc">
+                                 <img src="./Images/directon.png" id="directions-button" alt="Get Directions">
+                             </div>
+                            </div>
+                            <div class="rating">
+                             <img src="./Images/Avatar.png" alt="">
+                             <p>One of the best maternal hospital in the area.
+                             </p>
+                            </div>
+                         </div>
+                         <div class="hp">
+                            <div class="flex">
+                              <div class="infor">
+                                 <h1>Simariya Health post</h1>
+                                 <img src="./Images/star.png" alt="rating">
+                                 <div class="time">
+                                     <p style="color: #2EB000;">Open</p>
+                                     <p>Closes:</p>
+                                     <p>11:59</p>
+                                 </div>
+                             </div>
+                             <div class="direc">
+                                 <img src="./Images/directon.png" id="directions-button" alt="Get Directions">
+                             </div>
+                            </div>
+                            <div class="rating">
+                             <img src="./Images/Avatar.png" alt="">
+                             <p>One of the best maternal hospital in the area.
+                             </p>
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="sec4">
-            <div class="info">
-                <h1><span>Do's & Dont's</span> During Pregnancy</h1>
+            <div class="infos">
+                <h1><span>Do's</span> & <span>Dont's</span> During Pregnancy</h1>
             </div>
             <div class="vid">
                 <iframe width="853" height="500" src="https://www.youtube.com/embed/phiokLngFfM" title="Do&#39;s and Don&#39;ts During Pregnancy, Explained By A Gynaecologist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p style="text-align: center;">Here's a quick video on what to do and what not to do during pregnancy.</p>
+                <p style="text-align: center;">Here's a quick video on what <strong>to do</strong> and what <strong>not to do</strong> during pregnancy.</p>
             </div>
         </section>
+        <section class="sec5">
+            <div class="titl">
+                <h1>Disease During <span>Pregnancy</span> and <span>Prevention</span></h1>
+            </div>
+            <div class="containered">
+                <img src="./Images/pregdisease.png" id="amore" alt="pregnent women icon">
+            </div>
+            <p style="text-align: center;">Click on image to learn more about <strong>food habits</strong> and <strong>diseases</strong> during <span>pregnancy</span></p>
+        </section>
     </main>
+    <footer></footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="./app.js"></script>

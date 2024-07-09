@@ -143,14 +143,14 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
-}
-.sec4 .info, .sec4 .vid{
     padding: 0 40px;
 }
-.sec4 .info h1{
-    font-size: 37px;
-    margin: 10px;
+.sec4 .infos, .sec4 .vid{
+    padding: 0 40px;
+}
+.sec4 .infos h1{
+    font-size: 38px;
+    margin: 10px 0;
 }
 span{
     color: #42B2A2;
@@ -161,6 +161,14 @@ span{
     margin: 0 auto;
     margin-top: 10px;
 }
+/* Example CSS for custom marker icon */
+.fixed-icon {
+    width: 45px;
+    height: 45px;
+    background-image: url('./Images/hospital.png');
+    background-size: cover;
+}
+
 .sec2{
     height: 100vh;
     width: 100%;
@@ -230,7 +238,7 @@ span{
 }
 .maps{
     border: 1px solid #111;
-    height: 80%;
+    height: 90%;
     width: 66%;
     box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.5); 
     margin-top: 20px;
@@ -246,7 +254,7 @@ span{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 0 20px;
 }
 .hp{
@@ -377,4 +385,69 @@ span{
 }
 .hp h3{
     font-weight: 400;
+}
+.flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.infor h1{
+    font-size: 22px;
+}
+.infor img{
+    height: 30px;
+}
+.direc img{
+    height: 60px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.time, .rating{
+    display: flex;
+}
+.time{
+    gap: 5px;
+}.time p{
+    font-weight: 500;
+}
+.rating{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.rating p{
+    font-size: 13px;
+}
+.sec5{
+    height: 100vh;
+    width: 100vw;
+}
+.sec5, .sec5 h1, .sec5 .containered{
+    padding: 0 40px;
+    /* overflow: hidden; */
+}
+.sec5 h1{
+    font-size: 38px;
+}
+.containered {
+    position: relative;
+    padding: 40px;
+    /* Optional: Set width and height if needed */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.containered img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    cursor: pointer;
 }
