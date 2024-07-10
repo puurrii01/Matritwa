@@ -453,12 +453,12 @@ span{
     cursor: pointer;
 }
 footer{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-color: #F1F1F1;
 }
 .container{
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -478,4 +478,86 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.upper p, .lower p, .third a{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.first, .second{
+    gap: 40px;
+}
+.first h5, .second h5{
+    margin-bottom: 10px;
+}
+.third > *{
+    margin: 4px 0;
+    text-align: center;
+}
+.vline{
+    height: 2px;
+    width: 100%;
+    background-color: #111;
+    border: 1px solid #111;
+}
+.text{
+    display: flex; align-items: center; height: 10%; justify-content: center; font-size: 18px; width: 100%; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    .sec1 {
+        flex-direction: column;
+    }
+
+    .sec1 .left, .sec1 .right {
+        width: 100%;
+    }
+
+    .sec1 .left h1 {
+        font-size: 24px; /* Smaller font size on very small screens */
+    }
+
+    .sec1 .left p {
+        font-size: 12px; /* Smaller font size on very small screens */
+    }
+
+    .sec1 .left ul {
+        font-size: 12px; /* Smaller font size on very small screens */
+    }
+
+    .sec1 .left button {
+        width: 100%; /* Full width button on very small screens */
+    }
+
+    .content img {
+        width: 100%; /* Make image fully responsive */
+    }
+
+    .maps {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .containered img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
 }
