@@ -59,7 +59,9 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
+.hidee{
+    display: none;
+}
 .sec1 .left > * {
     margin: 10px 0;
 }
@@ -503,61 +505,128 @@ footer{
 .text{
     display: flex; align-items: center; height: 10%; justify-content: center; font-size: 18px; width: 100%; 
 }
-
+.menu{
+    display: none;
+}
+.hide{
+    display: none;
+}
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header ul {
-        flex-direction: column;
-    }
-
-    .sec1 {
+    header{
+        height: 7vh;
+        align-items: start;
+        padding: 0 20px;
+        justify-content: center;
         flex-direction: column;
     }
-
-    .sec1 .left, .sec1 .right {
+    header ul{
+        flex-direction: column;
+    }
+    .navbar, .register {
+        display: none;
+    }
+    .textlogo h1{
+        height: 100%;
+        align-self: start;
+        text-align: start;
+    }
+    .textlogo{
         width: 100%;
+        display: flex;
+        justify-content: end;
     }
-
-    .sec1 .left h1 {
-        font-size: 24px; /* Smaller font size on very small screens */
-    }
-
-    .sec1 .left p {
-        font-size: 12px; /* Smaller font size on very small screens */
-    }
-
-    .sec1 .left ul {
-        font-size: 12px; /* Smaller font size on very small screens */
-    }
-
-    .sec1 .left button {
-        width: 100%; /* Full width button on very small screens */
-    }
-
-    .content img {
-        width: 100%; /* Make image fully responsive */
-    }
-
-    .maps {
+    .menu{
         width: 100%;
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+    .menu img{
+        /* position: absolute; */
+        height: 25px;
+        left: 100%;
+        justify-self: end;
+    }
+    .infoo{
+        display: block;
+    }
+    .extended-menu{
+        display: block;
+        height: 23vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: #ffffff;
+    }
+    .infoo nav ul{
+        list-style: none;
+    }
+    .infoo nav ul li{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .infoo p a{
+        font-size: 18px;
+    }
+    .infoo p a:hover, .infoo nav ul li:hover{
+        text-decoration: underline;
+    } 
+    .hidee{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .sec1{
         height: auto;
-    }
-
-    .info {
         width: 100%;
-        padding: 10px;
+        display: block;
+        padding: 0 20px;
     }
-
-    .containered img {
+    .left{
         width: 100%;
+    }
+    .sec1 .right{
+        display: none;
+    }
+    .sec1 .left{
+        padding: 0;
         height: auto;
+        width: 100%;
     }
-
-    .container {
-        flex-direction: column;
+    .sec1 .left h1{
+        width: 100%;
+        margin: 10px 20px;
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+        margin-top: 10px;
     }
+    .sec1 .left > *{
+        margin: 0;
+    }
+    .sec1 .left p{
+        white-space: normal;
+    }
+    /* .sec1 .left button{
+        margin: 15px 0;
+        height: 40px;
+        min-height: 40px;
+        width: 200px;
+        min-width: 200px;
+        border-radius: 10px;
+        outline: none;
+        color: #FFFFFF;
+        background-color: #42B2A2;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        padding: 0 15px;
+        flex-shrink: 0;
+    } */
 }
