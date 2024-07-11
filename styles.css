@@ -581,10 +581,10 @@ footer{
         padding: 0;
     }
     .sec1{
-        height: 75vh;
+        height: 690px;
         width: 100%;
         display: block;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
     .left{
         width: 100%;
