@@ -471,7 +471,7 @@ footer{
     align-self: flex-start;
 }
 .title h1{
-    font-size: 26px
+    font-size: 26px;
 }
  .container h5{
     font-size: 20px;
@@ -554,7 +554,7 @@ footer{
     }
     .extended-menu{
         display: block;
-        height: 23vh;
+        height: 230px;
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -581,7 +581,7 @@ footer{
         padding: 0;
     }
     .sec1{
-        height: auto;
+        height: 75vh;
         width: 100%;
         display: block;
         padding: 0 20px;
@@ -629,4 +629,137 @@ footer{
         padding: 0 15px;
         flex-shrink: 0;
     } */
+     .sec2{
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+     }
+     .timeline{
+    padding: 0;}
+     .timeline h1{
+        font-size: 25px;
+        padding: none;
+     }
+     .content{
+        width: auto;
+        height: 300px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        /* padding-top: 30px; */
+        overflow: scroll;
+    }
+    .content img{
+        height: 300px;
+    }
+    .tracking{
+        margin-top: 15px;
+    }
+    .contained h1{
+        font-size: 25px;
+    }
+    .sec3{
+        padding: 0 20px;
+    }
+    .contained{
+        padding: 0;
+    }
+    .mappy{
+        flex-direction: column;
+    }
+    .sec3{
+        height: auto;
+    }
+    .maps{
+        width: 100%;
+        height: 450px;
+    }
+    .info{
+        flex-direction: row;
+        overflow: scroll;
+        width: 100%;
+        height: 260px;
+    }
+    .hp{
+        width: 320px;
+        padding: 10px;
+        height: 220px;
+        border: 0;
+    }
+    .hp h1{
+        font-size: 20px;
+    }
+    .infor img{
+        height: 20px;
+    }
+    .direc img{
+        height: 30px;
+    }
+    .time p{
+        font-size: 14px;
+    }
+    .rating p{
+        font-size: 9px;
+    }
+    .sec4{
+        height: auto;
+        padding: 0 20px;
+    }
+    .sec4 .infos, .sec4 .vid{ 
+        padding: 0;
+    }
+    .sec4 .infos h1{
+        font-size: 25px;
+    }
+    .vid{
+        height: 100%;
+        justify-self: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    iframe{
+        height: 240px;
+        width: 100%;
+    }
+    .vid p{
+        font-size: 12px;
+        padding: 0 6px;
+    }
+    .sec5{
+        padding: 0px;
+    }
+    .sec5 h1{
+        text-align: center;
+        font-size: 25px;
+        padding: 0;
+    }
+    .containered{
+        height: 330px;
+        padding: 0;
+    }
+    .containered img{
+        height: 310px;
+    }
+    .container{
+        padding: 10px;
+    }
+    .title h1{
+        font-size: 14px;
+    }
+    .container h5{
+        font-size: 10px;
+    }
+    .container p, .text p{
+        font-size: 6px;
+    }
+    footer{
+        width: 100%;
+        height: 300px;
+    }
+    .container h3{
+        font-size: 11px;
+    }
+    .vline{
+        height: 1px;
+    }
 }
