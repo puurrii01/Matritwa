@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Define fixed hospital locations with their latitude and longitude
     const fixedHospitals = [
-        { lat: 27.725, lon: 85.330 }, // Example coordinates
-        { lat: 27.710, lon: 85.325 }, // Example coordinates
-        // Add more fixed hospital locations as needed
+        { lat: 27.725, lon: 85.330 }, 
+        { lat: 27.710, lon: 85.325 }, 
     ];
 
     const link = document.querySelector("#amore");

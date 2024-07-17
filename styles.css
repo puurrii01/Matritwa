@@ -398,13 +398,13 @@ span{
     padding: 6px;
 }
 .infor h1{
-    font-size: 22px;
+    font-size: 18px;
 }
 .infor img{
-    height: 30px;
+    height: 25px;
 }
 .direc img{
-    height: 60px;
+    height: 40px;
     align-self: center;
     cursor: pointer;
     margin-top: 5px;
@@ -415,6 +415,7 @@ span{
 .time{
     gap: 5px;
 }.time p{
+    font-size: 13px;
     font-weight: 500;
 }
 .rating{
@@ -424,7 +425,7 @@ span{
     gap: 10px;
 }
 .rating p{
-    font-size: 13px;
+    font-size: 11px;
 }
 .sec5{
     height: auto;
