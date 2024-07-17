@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+main{
+    overflow: hidden;
+}
+header {
+    height: 13vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 13px;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+footer{
+    height: 80vh;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+.container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 80px;
+    align-items: flex-start;
+}
+.title{
+    align-self: flex-start;
+}
+.title h1{
+    font-size: 26px;
+}
+ .container h5{
+    font-size: 20px;
+}
+.first, .second, .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper p, .lower p, .third a{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.first, .second{
+    gap: 40px;
+}
+.first h5, .second h5{
+    margin-bottom: 10px;
+}
+.third > *{
+    margin: 4px 0;
+    text-align: center;
+}
+.vline{
+    height: 2px;
+    width: 100%;
+    background-color: #111;
+    border: 1px solid #111;
+}
+.text{
+    display: flex; align-items: center; height: 10%; justify-content: center; font-size: 18px; width: 100%; 
+}
+.menu{
+    display: none;
+}
+.hide{
+    display: none;
+}
+@media (max-width: 768px) {
+    header{
+        height: 7vh;
+        align-items: start;
+        padding: 0 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    .navbar, .register {
+        display: none;
+    }
+    .textlogo h1{
+        height: 100%;
+        align-self: start;
+        text-align: start;
+    }
+    .textlogo{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .menu{
+        width: 100%;
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+    .menu img{
+        /* position: absolute; */
+        height: 25px;
+        left: 100%;
+        justify-self: end;
+    }
+    .infoo{
+        display: block;
+    }
+    .extended-menu{
+        display: block;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: #ffffff;
+    }
+    .infoo nav ul{
+        list-style: none;
+    }
+    .infoo nav ul li{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .infoo p a{
+        font-size: 18px;
+    }
+    .infoo p a:hover, .infoo nav ul li:hover{
+        text-decoration: underline;
+    } 
+    .hidee{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding: 10px;
+    }
+    .title h1{
+        font-size: 14px;
+    }
+    .container h5{
+        font-size: 10px;
+    }
+    .container p, .text p{
+        font-size: 6px;
+    }
+    footer{
+        width: 100%;
+        height: 300px;
+    }
+    .container h3{
+        font-size: 11px;
+    }
+    .vline{
+        height: 1px;
+    }
+}
