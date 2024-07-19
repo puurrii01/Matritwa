@@ -124,6 +124,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     font-size: 16px;
     padding: 0 15px;
     flex-shrink: 0;
@@ -141,6 +142,12 @@ a {
     background-color: #36a397;
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
     transform: translateX(3px);
+    transition: all 0.3s ease;
+}
+.sec1 .left button:active{
+    background-color: #2e8379;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
+    /* transform: transl/ateX(3px); */
     transition: all 0.3s ease;
 }
 .sec4{
@@ -217,11 +224,22 @@ span{
     flex-shrink: 0;
     /* font-size: 19px; */
     margin-top: 40px;
+    cursor: pointer;
+}
+.tracking a{
+    background-color: #fcfcfc00;
+    color: #fff;
 }
 .tracking:hover{
     background-color: #36a397;
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
     transform: translateX(3px);
+    transition: all 0.3s ease;
+}
+.tracking button:active{
+    background-color: #2e8379;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
+    /* transform: transl/ateX(3px); */
     transition: all 0.3s ease;
 }
 .contained h1{
