@@ -15,7 +15,7 @@ main{
     overflow: hidden;
 }
 header {
-    height: 13vh;
+    height: 11vh;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -41,7 +41,6 @@ a {
     text-decoration: none;
     color: #111;
 }
-
 footer{
     height: 80vh;
     width: 100%;
@@ -99,6 +98,69 @@ footer{
 .hide{
     display: none;
 }
+.featuresec{
+    background-color: #e6e6e6;
+    height: auto;
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+}
+.featuresec h1{
+    text-align: center;
+    font-size: 35px;
+}
+.cards{
+    height: 80vh;
+    padding: 0 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+.card{
+    height: 210px;
+    width: 300px;
+    border: 1px solid #111;
+    outline: none;
+    border-radius: 20px;
+    background-color: #ffffff00;
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+    backdrop-filter: blur(10px); /* background blur */
+    -webkit-backdrop-filter: blur(10px); /* for Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.562); /* subtle shadow */
+    border-radius: 15px; /* rounded corners */
+    border: 1px solid rgba(36, 36, 36, 0.3); /* optional border for better effect */
+    outline: none;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+span{
+    color: #42B2A2;
+}
+.card h1{
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+}
+.card h1, .card p{
+    margin: 10px;
+}
+.card p{
+    font-size: 13px;
+    margin: 10px;
+    text-align: center;
+    color: #111;
+    font-weight: 500;
+}
+.card p a{
+    margin-top: 20px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
     header{
         height: 7vh;
@@ -189,5 +251,16 @@ footer{
     }
     .vline{
         height: 1px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 0; 
+    }
+    .featuresec{
+        overflow: scroll;
+    }
+    .cards > *{
+        margin: 10px 0;
     }
 }

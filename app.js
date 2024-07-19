@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
+    const scrollLinks = document.querySelectorAll(".scroll-link");
+
+    scrollLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
     // Initialize the Leaflet map
     function initMap() {
         const map = L.map('map').setView([27.7172, 85.3240], 12);

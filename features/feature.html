@@ -11,17 +11,17 @@
         <div class="textlogo">
             <h1><a href="./index.html">Matritwa</a></h1>
             <div class="menu">
-                <img src="./Images/menu.png" id="hamburger" alt="">
+                <img src="../Images/menu.png" id="hamburger" alt="">
             </div>
         </div>
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#trace">Tracker</a></li>
-                    <li><a href="./features/feature.html">Features</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#trace" class="scroll-link">Tracker</a></li>
+                    <li><a href="./feature.html">Features</a></li>
                     <li><a href="#">Resources</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#footie" class="scroll-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,11 +33,11 @@
         <div class="navbar infoo">
             <nav>
                 <ul>
-                    <li><a href="/../index.html">Home</a></li>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#trace" class="scroll-link">Tracker</a></li>
+                    <li><a href="./feature.html">Features</a></li>
                     <li><a href="#">Resources</a></li>
-                    <li><a href="#">Tracker</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#footie" class="scroll-link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,8 +45,44 @@
             <p><a href="">Login/Register</a></p>
         </div>
     </div>
-
-    <footer>
+    <main>
+        <section class="featuresec">
+            <h1>Our <span>Features</span></h1>
+            <div class="cards">
+                <div class="card">
+                    <h1>Pregnancy Tracker</h1>
+                    <p>Track your pregnancy with Matritwa. Get daily to-do lists, medication reminders, health post visit schedules, and tips for a healthy pregnancy and parenting.</p>
+                    <p><a href="../index.html#trace">Track Your Pregnancy</a></p>
+                </div>
+                <div class="card">
+                    <h1>Nutrition Planner</h1>
+                    <p>Access customized diet and nutrition plans designed to support both maternal health and fetal development, ensuring optimal nutrition throughout pregnancy.</p>
+                    <p><a href="../index.html#trace">Get your plans</a></p>
+                </div>
+                <div class="card">
+                    <h1>Educational Materials</h1>
+                    <p>Explore articles, videos, and FAQs covering topics related to pregnancy, birthing, and newborn care, empowering you with knowledge and insights for each stage of pregnancy.</p>
+                    <p><a href="../index.html#trace">Learn More</a></p>
+                </div>
+                <div class="card">
+                    <h1>Nearest Health Center Locator</h1>
+                    <p>Easily find nearby health centers and maternity services based on your location, ensuring access to essential health care facilities.</p>
+                    <p><a href="../index.html#mapiee">Find Health Centers</a></p>
+                </div>
+                <div class="card">
+                    <h1>Stress Management Techniques</h1>
+                    <p>Access relaxation techniques such as meditation, deep breathing, and prenatal massage guidance to manage stress effectively during pregnancy.</p>
+                    <p><a href="../index.html#trace">Manage Stress</a></p>
+                </div>
+                <div class="card">
+                    <h1>Healthcare Experts</h1>
+                    <p>Receive guidance from experienced medical professionals who can address specific concerns and provide expert advice.</p>
+                    <p><a href="../index.html#trace">Consult Experts</a></p>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer id="footie">
         <div class="container">
             <div class="title">
                 <h1>Matritwa</h1>
@@ -110,5 +146,7 @@
         <div class="vline"></div>
        <div class="text"> <p style="text-align: center;">&copy; 2024 Matritwa. All rights reserved.</p></div>
     </footer>
+    <script src="./feature.js"></script>
+    <script src="./smoothscrolling.js"></script>
 </body>
 </html>
